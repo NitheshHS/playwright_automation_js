@@ -35,5 +35,6 @@ test("Handle Mouse hover Test", async ({page})=>{
         await images.nth(index).hover();
         const userName = await page.locator(".figcaption h5").nth(index);
         console.log("User", await userName.textContent());
+        expect(await userName.textContent()).toContain(`user${index+1}`);
     }
 });
