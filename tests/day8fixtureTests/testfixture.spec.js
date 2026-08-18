@@ -28,7 +28,7 @@ test('Fixture Test 2', async ({ loginPage, setZeroUserPost }) => {
     ).toBeVisible();
 });
 
-test.only('Fixture Test 3', async ({ loginViaApi }) => {
+test('Fixture Test 3', async ({ loginViaApi }) => {
     console.log("Running test with loginViaApi fixture");
     await setTimeout(() => { }, 5000);
     await expect(
